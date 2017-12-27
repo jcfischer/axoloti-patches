@@ -1,0 +1,451 @@
+<patch-1.0 appVersion="1.0.12">
+   <obj type="mix/mix 8" uuid="f12e13a7920b67f4e286369e0e2c573e5af08f9c" name="mix_1" x="1078" y="42">
+      <params>
+         <frac32.u.map name="gain1" value="64.0"/>
+         <frac32.u.map name="gain2" value="64.0"/>
+         <frac32.u.map name="gain3" value="32.0"/>
+         <frac32.u.map name="gain4" value="32.0"/>
+         <frac32.u.map name="gain5" value="32.0"/>
+         <frac32.u.map name="gain6" value="32.0"/>
+         <frac32.u.map name="gain7" value="32.0"/>
+         <frac32.u.map name="gain8" value="64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="audio/out stereo" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="out_1" x="1498" y="42">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="./jcf_long-delay" uuid="96beaa9e-52cd-43c1-a374-77deea09782d" name="jcf_long-delay_1" x="322" y="70">
+      <params>
+         <frac32.s.map name="lowpass_1" value="-53.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="./jcf_long-delay" uuid="96beaa9e-52cd-43c1-a374-77deea09782d" name="jcf_long-delay_2" x="476" y="70">
+      <params>
+         <frac32.s.map name="lowpass_1" value="-25.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="./syntvoice" uuid="2b995bcb-eab5-4f56-8a40-c716b3b8e8da" name="syntvoice_1" x="28" y="98">
+      <params>
+         <frac32.u.map name="vcf3_1:reso" value="0.0"/>
+      </params>
+      <attribs>
+         <combo attributeName="poly" selection="1"/>
+         <combo attributeName="midichannel" selection="inherit"/>
+         <combo attributeName="mididevice" selection="omni"/>
+         <combo attributeName="midiport" selection="omni"/>
+      </attribs>
+   </obj>
+   <obj type="jt/granular/grainverb" uuid="aaafab49-927b-4660-a360-ed30d1a7e643" name="grainverb_1" x="1288" y="140">
+      <params>
+         <frac32.u.map name="amount" value="6.0"/>
+         <frac32.u.map name="delay" value="50.5"/>
+         <frac32.u.map name="spread" value="29.5"/>
+         <frac32.u.map name="fdbk" value="57.5"/>
+      </params>
+      <attribs>
+         <combo attributeName="grains" selection="16"/>
+         <combo attributeName="grainlength" selection="256"/>
+         <combo attributeName="window" selection="triangle"/>
+         <combo attributeName="size" selection="8192 (170ms)"/>
+      </attribs>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_1" x="182" y="392">
+      <params>
+         <frac32.u.map name="value" value="64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="knob_1" x="406" y="434">
+      <params>
+         <frac32.u.map name="value" MidiCC="16" value="41.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="knob_2" x="490" y="434">
+      <params>
+         <frac32.u.map name="value" MidiCC="17" value="17.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="knob_3" x="574" y="434">
+      <params>
+         <frac32.u.map name="value" MidiCC="18" value="33.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="knob_4" x="658" y="434">
+      <params>
+         <frac32.u.map name="value" MidiCC="19" value="38.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="knob_5" x="742" y="434">
+      <params>
+         <frac32.u.map name="value" MidiCC="20" value="35.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="knob_6" x="826" y="434">
+      <params>
+         <frac32.u.map name="value" MidiCC="21" value="32.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="knob_7" x="910" y="434">
+      <params>
+         <frac32.u.map name="value" MidiCC="22" value="25.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="knob_8" x="994" y="434">
+      <params>
+         <frac32.u.map name="value" MidiCC="23" value="60.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="slide_1" x="406" y="546">
+      <params>
+         <frac32.u.map name="value" MidiCC="0" value="63.99999952316284"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="slide_2" x="490" y="546">
+      <params>
+         <frac32.u.map name="value" MidiCC="1" value="63.99999952316284"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="slide_3" x="574" y="546">
+      <params>
+         <frac32.u.map name="value" MidiCC="2" value="61.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="slide_4" x="658" y="546">
+      <params>
+         <frac32.u.map name="value" MidiCC="3" value="47.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="slide_5" x="742" y="546">
+      <params>
+         <frac32.u.map name="value" MidiCC="4" value="41.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="slide_6" x="826" y="546">
+      <params>
+         <frac32.u.map name="value" MidiCC="5" value="37.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="slide_7" x="910" y="546">
+      <params>
+         <frac32.u.map name="value" MidiCC="6" value="11.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="slide_8" x="994" y="546">
+      <params>
+         <frac32.u.map name="value" MidiCC="7" value="51.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="track_b" x="56" y="630">
+      <params>
+         <bool32.tgl name="b" MidiCC="58" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="track_f" x="140" y="630">
+      <params>
+         <bool32.tgl name="b" MidiCC="59" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="s_1_m" x="406" y="644">
+      <params>
+         <bool32.tgl name="b" MidiCC="32" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="s_2_m_" x="490" y="644">
+      <params>
+         <bool32.tgl name="b" MidiCC="33" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="s_3_m" x="574" y="644">
+      <params>
+         <bool32.tgl name="b" MidiCC="34" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="s_4_m" x="658" y="644">
+      <params>
+         <bool32.tgl name="b" MidiCC="35" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="s_5_m" x="742" y="644">
+      <params>
+         <bool32.tgl name="b" MidiCC="36" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="s_6_m" x="826" y="644">
+      <params>
+         <bool32.tgl name="b" MidiCC="37" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="s_7_m" x="910" y="644">
+      <params>
+         <bool32.tgl name="b" MidiCC="38" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="s_8_m" x="994" y="644">
+      <params>
+         <bool32.tgl name="b" MidiCC="39" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="cycle" x="56" y="700">
+      <params>
+         <bool32.tgl name="b" MidiCC="46" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="set" x="168" y="700">
+      <params>
+         <bool32.tgl name="b" MidiCC="60" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="prev" x="238" y="700">
+      <params>
+         <bool32.tgl name="b" MidiCC="61" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="next" x="308" y="700">
+      <params>
+         <bool32.tgl name="b" MidiCC="62" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="m_1_m" x="406" y="714">
+      <params>
+         <bool32.tgl name="b" MidiCC="48" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="m_2_m" x="490" y="714">
+      <params>
+         <bool32.tgl name="b" MidiCC="49" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="m_3_m" x="574" y="714">
+      <params>
+         <bool32.tgl name="b" MidiCC="50" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="m_4_m" x="658" y="714">
+      <params>
+         <bool32.tgl name="b" MidiCC="51" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="m_5_m" x="742" y="714">
+      <params>
+         <bool32.tgl name="b" MidiCC="52" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="m_6_m" x="826" y="714">
+      <params>
+         <bool32.tgl name="b" MidiCC="53" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="m_7_m" x="910" y="714">
+      <params>
+         <bool32.tgl name="b" MidiCC="54" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="m_8_m" x="994" y="714">
+      <params>
+         <bool32.tgl name="b" MidiCC="55" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="r_1_m" x="406" y="784">
+      <params>
+         <bool32.tgl name="b" MidiCC="64" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="r_2_m" x="490" y="784">
+      <params>
+         <bool32.tgl name="b" MidiCC="65" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="r_3_m" x="574" y="784">
+      <params>
+         <bool32.tgl name="b" MidiCC="66" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="r_4_m" x="658" y="784">
+      <params>
+         <bool32.tgl name="b" MidiCC="67" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="r_5_m" x="742" y="784">
+      <params>
+         <bool32.tgl name="b" MidiCC="68" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="r_6_m" x="826" y="784">
+      <params>
+         <bool32.tgl name="b" MidiCC="69" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="r_7_m" x="910" y="784">
+      <params>
+         <bool32.tgl name="b" MidiCC="70" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="r_8_m" x="994" y="784">
+      <params>
+         <bool32.tgl name="b" MidiCC="71" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="back" x="56" y="798">
+      <params>
+         <bool32.tgl name="b" MidiCC="43" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="ff" x="126" y="798">
+      <params>
+         <bool32.tgl name="b" MidiCC="44" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="stop" x="196" y="798">
+      <params>
+         <bool32.tgl name="b" MidiCC="42" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="play" x="266" y="798">
+      <params>
+         <bool32.tgl name="b" MidiCC="41" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="rec" x="336" y="798">
+      <params>
+         <bool32.tgl name="b" MidiCC="45" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <nets>
+      <net>
+         <source obj="r_1_m" outlet="o"/>
+         <dest obj="jcf_long-delay_1" inlet="rec-gate"/>
+      </net>
+      <net>
+         <source obj="m_1_m" outlet="o"/>
+         <dest obj="jcf_long-delay_1" inlet="erase-gate"/>
+      </net>
+      <net>
+         <source obj="knob_1" outlet="out"/>
+         <dest obj="jcf_long-delay_1" inlet="speed"/>
+      </net>
+      <net>
+         <source obj="slide_1" outlet="out"/>
+         <dest obj="jcf_long-delay_1" inlet="feedback"/>
+      </net>
+      <net>
+         <source obj="syntvoice_1" outlet="outlet_1"/>
+         <dest obj="jcf_long-delay_1" inlet="inlet_1"/>
+         <dest obj="mix_1" inlet="in8"/>
+         <dest obj="jcf_long-delay_2" inlet="inlet_1"/>
+      </net>
+      <net>
+         <source obj="jcf_long-delay_1" outlet="outlet_1"/>
+         <dest obj="mix_1" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="jcf_long-delay_2" outlet="outlet_1"/>
+         <dest obj="mix_1" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="knob_2" outlet="out"/>
+         <dest obj="jcf_long-delay_2" inlet="speed"/>
+      </net>
+      <net>
+         <source obj="slide_2" outlet="out"/>
+         <dest obj="jcf_long-delay_2" inlet="feedback"/>
+      </net>
+      <net>
+         <source obj="dial_1" outlet="out"/>
+         <dest obj="jcf_long-delay_1" inlet="amount"/>
+         <dest obj="jcf_long-delay_2" inlet="amount"/>
+      </net>
+      <net>
+         <source obj="m_2_m" outlet="o"/>
+         <dest obj="jcf_long-delay_2" inlet="erase-gate"/>
+      </net>
+      <net>
+         <source obj="r_2_m" outlet="o"/>
+         <dest obj="jcf_long-delay_2" inlet="rec-gate"/>
+      </net>
+      <net>
+         <source obj="mix_1" outlet="out"/>
+         <dest obj="grainverb_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="grainverb_1" outlet="l"/>
+         <dest obj="out_1" inlet="left"/>
+      </net>
+      <net>
+         <source obj="grainverb_1" outlet="r"/>
+         <dest obj="out_1" inlet="right"/>
+      </net>
+      <net>
+         <source obj="knob_8" outlet="out"/>
+         <dest obj="grainverb_1" inlet="delay"/>
+      </net>
+      <net>
+         <source obj="slide_8" outlet="out"/>
+         <dest obj="grainverb_1" inlet="spread"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>203</x>
+      <y>137</y>
+      <width>1675</width>
+      <height>993</height>
+   </windowPos>
+</patch-1.0>
